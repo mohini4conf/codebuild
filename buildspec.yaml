@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      name: python3.8
+  build:
+    commands:
+      - cd /mnt/backup
+      -  pwd
+  post_build:
+    commands:
+      - echo "Backup Complete"
